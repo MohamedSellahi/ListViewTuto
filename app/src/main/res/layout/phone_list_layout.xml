@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="?android:attr/listPreferredItemHeight">
+    />
+    <ImageView
+        android:id="@+id/thumbImg"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/bart"
+        android:layout_gravity="center_vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+        android:layout_toRightOf="@id/thumbImg"
+        android:layout_alignParentBottom="true"
+        android:ellipsize="marquee"
+        android:maxLines="1"
+        android:text="Description"
+        android:textSize="12sp"
+        android:layout_marginLeft="@dimen/fab_margin"
+        />
+    <TextView
+        android:id="@+id/thumbTextFistLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/thumbImg"
+        android:ellipsize="marquee"
+        android:maxLines="1"
+        android:text="Exemple contact name"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_alignWithParentIfMissing="true"
+        />
+
+</RelativeLayout>
